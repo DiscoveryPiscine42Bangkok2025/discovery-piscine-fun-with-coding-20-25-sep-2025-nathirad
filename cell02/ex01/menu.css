@@ -1,0 +1,18 @@
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.menu {
+    display: none;
+    background-color: azure;
+}
+
+.dropdown:hover .menu {
+    display: block;
+}
+
+.menu a {
+    display: block;
+    background-color: aquamarine;
+}

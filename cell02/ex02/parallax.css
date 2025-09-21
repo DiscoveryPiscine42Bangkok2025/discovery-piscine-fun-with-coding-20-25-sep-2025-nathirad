@@ -1,0 +1,43 @@
+.body {
+    margin: 0px;
+    background-color: #000;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.first-image {
+    background-image: url("https://th.bing.com/th/id/OIP.hJ9MADIGXYBjeRjJtlGahwHaEK?w=289&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3");
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    color: #fff;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-top: 100vh;
+    background-color: #000;
+}
+
+.second-image {
+    background-image: url("https://th.bing.com/th/id/OIP.I7e7cvPB1ciK74f_dY3OgAHaIu?w=154&h=182&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

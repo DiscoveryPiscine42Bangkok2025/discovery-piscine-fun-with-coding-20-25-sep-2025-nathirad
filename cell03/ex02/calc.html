@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Calculator Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <h2>Basic Calculator</h2>
+        <input type="text" id="left" placeholder="Left number">
+
+        <select id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+    </select>
+
+        <input type="text" id="right" placeholder="Right number">
+
+
+        <input type="button" value="Try me!" onclick="calculate()">
+    </div>
+
+    <script src="clac.js"></script>
+</body>
+
+</html>

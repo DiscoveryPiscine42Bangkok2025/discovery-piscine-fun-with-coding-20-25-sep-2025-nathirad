@@ -1,0 +1,161 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #282c2f;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    position: fixed;
+    /* Keep the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* Pushes logo and menu to opposite ends */
+    align-items: center;
+    padding: 1.5rem 2rem;
+    z-index: 1000;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.header_logo {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+.header_menu a {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+.intro {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    /* Add your hero background image here */
+    background-image: url('img/background.jpg');
+    /* CHANGE THIS TO YOUR IMAGE */
+    background-size: cover;
+    background-position: center;
+}
+
+.intro_title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.intro_subtitle {
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 1rem auto;
+    line-height: 1.6;
+}
+
+.intro_button {
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+    padding: 0.75rem 1.75rem;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.intro_button:hover {
+    background-color: white;
+    color: #282c2f;
+}
+
+.card_container {
+    display: flex;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 50%;
+    min-height: 60vh;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card_data {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4rem;
+    opacity: 1;
+    transition: background-color 0.4s ease;
+}
+
+.card:nth-child(1) .card_data {
+    background-color: rgba(101, 201, 196, 0.75);
+}
+
+.card:nth-child(2) .card_data {
+    background-color: rgba(132, 112, 212, 0.75);
+}
+
+.card_des {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.card_title {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0.5rem;
+}
+
+.card:hover .card_data {
+    background-color: rgba(40, 44, 47, 0.7);
+}
+
+.card:hover .image {
+    transform: scale(1.1);
+}
